@@ -7,14 +7,16 @@ import { PostDetailsComponent } from './posts/post-details/post-details.componen
 import { UserListComponent } from './users/user-list/user-list.component';
 import { UserDetailsComponent } from './users/user-details/user-details.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { TemplateComponent } from './components/template/template.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent},
   { path: 'post', component: PostListComponent},
   { path: 'post/:id', component: PostDetailsComponent},
   { path: 'user', component: UserListComponent},
   { path: 'user/:id', component: UserDetailsComponent},
+  { path: 'form', component: TemplateComponent},
   { path: '**', component: NotfoundComponent}
 ];
 

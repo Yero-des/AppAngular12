@@ -1,0 +1,19 @@
+<div *ngIf="countries"  class="container">
+  <div class="row row-cols-1 row-cols-xl-4 justify-content-center mb-3">    
+    <div *ngFor="let country of countries" class="col mb-5">
+
+      <div class="card text-bg-dark" style="width: 15rem;">
+        <div class="card-img-object">
+          <img src="{{ country.flag }}" class="card-img-top" alt="{{ country.name }}">
+        </div>        
+        <div class="card-body">
+          <h5 class="card-title fs-5">{{ country.name }}</h5>
+          <p class="card-subtitle fs-6 fw-bold">{{ country.capital}}</p>
+          <p class="card-text fs-6">{{ country.code}}</p>
+          <a href="#" class="btn btn-primary">Ir al pais</a>
+        </div>
+      </div>
+
+    </div>
+  </div>  
+</div>
